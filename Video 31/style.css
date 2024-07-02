@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(206, 153, 153);
+}
+@media only  screen  and (orientation: landscape) {
+    
+    body{
+        background-color: rgb(0, 128, 28);
+        border: 10px solid rgb(235, 26, 235);
+        padding: 10px;
+                }
+    
+}
+                
+               
+
+
+@media only screen and (max-width:455px) {
+    
+    body{
+        background-color: rgb(144, 144, 212);
+    }
+    .boxes{
+        flex-direction: column;
+    }
+}
+.boxes{
+    display: flex;
+
+}
+.box{
+    width: 400px;
+    height: 398px;
+    background-color: steelblue;
+    padding: 3px;
+    margin: 3px;
+}

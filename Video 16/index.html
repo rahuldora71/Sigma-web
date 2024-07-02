@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        div{
+            background-color: red;
+        }
+        .red{
+            background-color: rgb(77, 99, 224);
+        }
+        #green{
+            background-color: green;
+        }
+        /* child selectors */
+        div > p{
+            color: #e2e2e2;
+        }
+        div > article>p{
+            color: chocolate;
+        }
+
+        /* descendent selector */
+
+        .descen p{
+            color: rgb(255, 255, 255);
+        }
+
+        /* Universal Selector */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: greenyellow;
+        }
+        a:link{
+            color: blueviolet;
+        }
+        a:hover{
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="red">
+        <p>This paragraph is under div </p>
+        I am in  div
+        <article>
+            <p>This is paragraph in artical under div </p>
+        </article>
+    </div>
+
+
+    <div class="descen"> 
+        <p>
+            Hi this is under  div for testing descendent selector
+
+        </p>
+        <span>
+            <p>
+                Hi this is in spam in div for testing descendent selector
+            </p>
+        </span>
+    </div>
+
+
+    <div > My name is rahul</div>
+    <div id="green"> My name is rahul</div>
+
+    
+    <a href="http://www.google.com" target="_blank"> Go to Google</a>
+    <a href="http://www.youtube.com" target="_blank"> Go to Google</a>
+</body>
+</html>

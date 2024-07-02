@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: rgb(127, 150, 255);
+            height: 80vh;
+            width: 30vw;
+
+        }
+        .box{
+
+            width: 34px;
+            height: 45px;
+            background-color: rgb(43, 226, 73);
+            /* animation: doraAnimation ;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+            animation-timing-function: ease-in-out;
+            animation-delay: 1;
+            animation-direction:alternate-reverse ;
+            animation-play-state:running; */
+            animation: doraAnimation 3s ease-in-out  infinite alternate-reverse ,
+                    dora2 3s ease-in-out 3 alternate-reverse ;
+        }
+
+        @keyframes doraAnimation {
+            from{
+                /* transform: ; */
+                background-color: rgb(255, 0, 0);
+            }
+            to{
+                transform: translate(800px);
+                background-color: cyan;
+                
+            }
+
+        }
+
+        @keyframes dora2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+
+            }
+            50%{
+                transform: rotate(220deg);
+
+            }
+            80%{
+                transform: rotate(300deg);
+
+            }
+            100%{
+                transform: rotate(310deg);
+
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>

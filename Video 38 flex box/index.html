@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            justify-content: space-between;
+            align-items: center;
+            /* flex-wrap: wrap; */
+            flex-flow: row wrap;
+            /* flex-direction: row; */
+            /* align-content:flex-start; */
+            gap: 16px;
+            row-gap:12px ;
+            /* flex-direction: column-reverse; */
+        }
+        .item{ 
+            height: 32px;
+            width: 32px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            flex-grow: 1;
+            /* margin: 6px; */
+            text-align: center;
+        }
+        .main{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    
+    
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item">9</div>
+    <div class="item" style="align-self: flex-end;">90</div>
+    <div class="item">9</div>
+    <div class="item" >9</div>
+    <div class="main" style="flex-grow: 1;">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+    </div>
+   </div>     
+</body>
+</html>

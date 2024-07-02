@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+             height: 600px;
+             background-color: blue;
+            
+             position: relative;
+
+        }
+        .box{
+            width: 100px;
+             height: 100px;
+             border-radius: 50px;
+             background-color: red;
+             position: absolute;
+             bottom: 0;
+             left: 0;
+             
+             animation: dorax 7s  linear infinite 
+             ,doraY 1s  ease-out infinite  alternate;
+             
+             /* dora2 3s infinite  ; */
+                        
+        }
+        @keyframes dorax {
+            from{
+                left: 0%;
+            }
+            to{
+                left: 100%;
+
+
+            }
+            
+        }
+        @keyframes doraY {
+            from{
+                bottom:0%;
+            }
+            to{
+                bottom: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
