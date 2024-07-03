@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url("assets/images/bg.jpg");
+    min-height: 700px;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main .box{
+    /* height: 700px ; */
+    min-height: 700px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav
+{
+    display: flex;
+    max-width:60vw;
+    height: 100px;
+
+    margin: auto;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+    
+}
+nav svg{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: red;
+    fill: currentColor;
+    
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    margin-top: 184px;
+    font-family:  "Martel Sans", sans-serif ,"Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    /* margin: 0 15px 0 15px; */
+    color: #ffffff;
+    
+    gap: 12px;
+    /* padding: 100px 0 100px 0; */
+
+}
+.hero span:first-child{
+    color: NetflixSans;
+    
+    /* font-family: "Netflix Sans"; */
+    font-weight: 900;
+    font-size: 48px;
+    
+}
+.hero span:nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+.hero span:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+}
+.hero button{
+    /* font-size: 24px;
+    font-weight: 500;
+    height: 40px; */
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+    border: none;
+    padding: 12px;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 10px;
+
+    
+}
+.hero input{
+    font-size: 14px;
+    height: 3.5rem ;
+    opacity: 0.8;
+    border: 2px solid  #ffffff;
+    padding-left: 10px;
+
+
+    background-color: black;
+    
+        /* text-align: left; */
+        /* position: relative; */
+        margin: 1rem auto 0;
+        width: 400px;
+        /* width: 100%; */
+        max-width: 36.625rem;
+        
+        /* align-items: center; */
+    
+    }
+.sepration{
+    height: 11px;
+    width: 100%;
+    background-color: gray;
+}
+.login-form{
+    
+        margin: auto;
+        max-width: calc(
+            100% - 3rem
+        );
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    
+}
